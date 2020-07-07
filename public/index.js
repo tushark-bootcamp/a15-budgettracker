@@ -79,6 +79,7 @@ function populateChart() {
 }
 
 function sendTransaction(isAdding) {
+  //alert("sendTransaction");
   let nameEl = document.querySelector("#t-name");
   let amountEl = document.querySelector("#t-amount");
   let errorEl = document.querySelector(".form .error");
@@ -136,6 +137,7 @@ function sendTransaction(isAdding) {
   })
   .catch(err => {
     // fetch failed, so save in indexed db
+    //alert("Fetch failed, saving to indexed DB");
     saveRecord(transaction);
 
     // clear form
@@ -145,9 +147,11 @@ function sendTransaction(isAdding) {
 }
 
 document.querySelector("#add-btn").onclick = function() {
+  event.preventDefault();
   sendTransaction(true);
 };
 
 document.querySelector("#sub-btn").onclick = function() {
+  event.preventDefault();
   sendTransaction(false);
 };
