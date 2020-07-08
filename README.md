@@ -1,6 +1,6 @@
 # a15-budgettracker
 
-  [![Generic badge](https://img.shields.io/badge/Fitness-Tracker-green.svg)](https://github.com/tushark-bootcamp/a15-budgettracker)
+  [![Generic badge](https://img.shields.io/badge/Budget-Tracker-green.svg)](https://github.com/tushark-bootcamp/a15-budgettracker)
   
   ## Description
   A budget tracker app that can work off line. This is a good working example to demonstrate a working example of Express project with MongoDB
